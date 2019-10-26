@@ -11,7 +11,8 @@ echo "converting aparc.a2009+aseg file to nifti"
 
 #TODO..
 
-singularity exec -e docker://brainlife/mcr:neurodebian1604-r2017a ./compiled/main
+#singularity exec -e docker://brainlife/mcr:neurodebian1604-r2017a ./compiled/main
+singularity exec -e docker://brainlife/mcr:r2019a ./compiled/main
 
 
 if [ ! -s output.mat ];
